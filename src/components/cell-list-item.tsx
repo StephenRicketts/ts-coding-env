@@ -12,7 +12,8 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
   let child: JSX.Element;
 
   if (cell.type === 'code') {
-    child = <>
+    child = 
+    <>
       <div className="action-bar-wrapper">
          <ActionBar id={cell.id} />
       </div>
@@ -29,4 +30,4 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
     </div>;
 };
 
-export default CellListItem
+export default CellListItem;

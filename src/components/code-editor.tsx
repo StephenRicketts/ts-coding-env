@@ -36,7 +36,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({onChange, initialValue}) => {
       semi: true,
       singleQuote: true
     }).replace(/\n$/, "");
-    // set the formatted valye back in the editor
+    // set the formatted value back in the editor
     editorRef.current.setValue(formatted);
   }
 
@@ -49,7 +49,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({onChange, initialValue}) => {
   value={initialValue}
   theme="dark"
   language="javascript" 
-  
+  height="100%"
   options={{
     wordWrap: 'on',
     minimap: { enabled: false},
